@@ -1,0 +1,89 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__mainwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fruit-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fruit-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #dbf8fd;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.fruit-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.fruit-label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.checkbox-controller {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(31, 30, 30);
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.checkbox-text {
+  font-size: 25px;
+  user-select: none;
+}
+
+.checkbox:focus + .checkbox-controller {
+  box-shadow: 0 0 0 3px rgb(22, 35, 210);
+}
+
+.checkbox-apple:checked + .checkbox-controller {
+  background-image: url("../../../assets/img/apple.png");
+}
+
+.checkbox-orange:checked + .checkbox-controller {
+  background-image: url("../../../assets/img/orange.png");
+}
+
+.checkbox-banana:checked + .checkbox-controller {
+  background-image: url("../../../assets/img/banana.png");
+}
+
+.checkbox-pine-apple:checked + .checkbox-controller {
+  background-image: url("../../../assets/img/pine-apple.jpg");
+}
+
+input:disabled ~ span {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
