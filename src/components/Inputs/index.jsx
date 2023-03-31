@@ -22,12 +22,13 @@ export const Inputs = () => {
       <InputsText>To get user input</InputsText>
       <InputsTitle>When To Use</InputsTitle>
       <InputsText>
-        A basic widget for getting the user input is a text field. Keyboard and
-        mouse can be used for providing or changing data.
+      A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.
       </InputsText>
 
       <InputsList>
         <li>A user input in a form field is needed.</li>
+        <li>Primary button: indicate the main action, one primary button at most in one section.</li>
+        <li>Default button: indicate a series of actions without priority.</li>
       </InputsList>
 
       <LayoutWrapper>
