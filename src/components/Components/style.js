@@ -28,7 +28,7 @@ export const PathLink = styled(Link)`
   width: 190px;
   height: 75px;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   margin: 5px;
   align-items: center;
